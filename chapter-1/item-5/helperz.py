@@ -44,5 +44,5 @@ print(green)
 - Python's syntax makes it easy to write single-line expressions that
   are overly comlpex
 - Move these expressions into helpers and consider if/else as an alternative
-  to Boolean operators or and and in expressions
+  to Boolean operators or and and in expression
 """
