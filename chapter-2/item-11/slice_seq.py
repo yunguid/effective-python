@@ -69,5 +69,4 @@ print("after b  ", b)
 """
 - avoid being verbose when slicing, don't supply 0 for the start of the lenght of the
 sequence for the end index
-- slicing is for
 """
