@@ -104,3 +104,8 @@ class SortedDict(MutableMapping):
 ranks = SortedDict()
 populate_ranks(votes, ranks)
 print(ranks)
+
+TTR:
+    1. As of Python 3.7, dictionaries preserve insertion order, making it safe and predictable to rely on the order of keys and values when iterating or serializing.
+    2. Custom mapping types (like those inheriting from MutableMapping) can change dictionary behavior, so be mindful of your methods and expected order when using or defining your own dict-like classes.
+    3. When order matters for your application logic or output, leverage dict’s insertion-order guarantee for readable, maintainable code.

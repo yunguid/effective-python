@@ -104,3 +104,8 @@ z = y[1:-1]
 print(f"Step 2 - Remove first and last elements: {z}")
 logging.info(f"Final result after 2 clear steps: {z}")
 logging.info("This approach is much clearer than a single complex slice expression!")
+
+TTR:
+    1. Avoid combining slicing and striding in a single expression for complex operations—it's easy to make mistakes and hard to read, which leads to subtle bugs.
+    2. Breaking down multiple-step sequence manipulations into clear, sequential steps improves code clarity and maintainability.
+    3. Prefer explicit, simple slice expressions or helper functions to minimize the risk of off-by-one errors and unintended behaviors with stride logic.

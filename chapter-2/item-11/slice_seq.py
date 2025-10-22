@@ -69,4 +69,10 @@ print("after b  ", b)
 """
 - avoid being verbose when slicing, don't supply 0 for the start of the lenght of the
 sequence for the end index
+
+TTR:
+    1. Use slice syntax to access parts of sequences concisely—it's more readable and less error-prone than manual indexing.
+    2. Omitting the start or end index in a slice (e.g., a[:5] or a[5:]) is not just a style preference—it avoids unnecessary verbosity and potential mistakes with index values.
+    3. Assigning to a slice (a[2:4] = [...]) replaces only that segment, enabling in-place modifications for lists.
+    4. Copying with full-slice (a[:]) ensures you duplicate the list contents, not just its reference, which is important for avoiding side effects when working with mutable data.
 """

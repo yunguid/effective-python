@@ -142,12 +142,13 @@ instances to use setdefault:
     for raising exceptions
 
 Things to Remember:
-    1. there are four common ways to detect and handle missing keys in dictionaries:
+    1. There are four common ways to detect and handle missing keys in dictionaries:
         using 'in' expressions, 'KeyError' exceptions, the 'get' method, and the
-        'setdefault' method
-    2. 'get' method is best for dictionaries that contain basic types like counters
-    3. when the setdefault method of dict seems like the best fit for your problem consider
-    using the defaultdict instead.
+        'setdefault' method. Each approach balances code clarity, efficiency, and safety; knowing your options lets you pick the most appropriate method for your use case.
+    2. The 'get' method is best for dictionaries that contain basic types like counters.
+        This avoids unnecessary allocations or assignments, which saves resources and keeps your code simple and fast when all you need is a default value.
+    3. When the setdefault method of dict seems like the best fit for your problem consider
+    using the defaultdict instead. defaultdict is more expressive for providing default values for missing keys and avoids confusion around setdefault's behavior and side effects.
 """
 
 from collections import defaultdict

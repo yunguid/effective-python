@@ -69,4 +69,10 @@ become a list containing the zero or more values they receive
 When dividing a list into non-overlapping pieces, catch all unpacking is much less error
 prone than slicing and indexing
 
+TTR:
+    1. Use catch-all unpacking (`*rest`) to cleanly extract multiple elements from lists or iterables—it's clearer and safer than using slices for partitioning.
+    2. Catch-all unpacking reduces errors in splitting sequences, especially when their exact length may vary, because it automatically collects all extra items into a list.
+    3. The catch-all can be placed in any position, enabling concise assignment and improving readability wherever you need to group several values from a sequence.
+
+
 """

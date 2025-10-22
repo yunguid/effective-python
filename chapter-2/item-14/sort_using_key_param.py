@@ -150,3 +150,8 @@ print(purchases)
 
 purchases.sort(key=lambda x: (x.description, x.cost), reverse=True)
 print(purchases)
+
+TTR:
+    1. Use the key parameter with sort to customize ordering based on functions or item attributes—this enables powerful, concise sorting beyond default behavior.
+    2. Tuples in the key function let you sort by multiple criteria with ease, as Python will compare each tuple element in order: primary, secondary, etc.
+    3. Customizing sort order keeps your code flexible and avoids the need for complex data pre-processing or manual sorting.
